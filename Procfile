@@ -1,1 +1,1 @@
-worker: python3 main.py
+web: python3 healthy.py & python3 main.py
