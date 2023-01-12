@@ -14,5 +14,5 @@ RUN chmod 777 /usr/src/app
 RUN pip3 install --upgrade pip setuptools wheel
 RUN pip3 install -r requirements.txt
 RUN apt-get -qq purge git && apt-get -y autoremove && apt-get -y autoclean
-
+EXPOSE 5000
 CMD ["bash", "start.sh"]
